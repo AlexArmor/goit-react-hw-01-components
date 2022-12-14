@@ -6,6 +6,7 @@ import { Heading } from './Heading/Heading.styled';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'styles/theme';
 import { Profile } from './Profile/Profile';
+import { GlobalStyleComponent } from '../styles/GlobalStyles';
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         // Block 1 //{' '}
       </Heading>
       <Profile user={user} />
+      <GlobalStyleComponent />
     </ThemeProvider>
   );
 };
