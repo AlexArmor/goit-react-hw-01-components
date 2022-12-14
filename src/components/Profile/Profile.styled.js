@@ -4,7 +4,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: ${({ theme }) => theme.spacing(100)};
+  width: ${({ theme }) => theme.spacing(120)};
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -21,3 +21,4 @@ export const Description = styled.div`
 export const Avatar = styled.img`
   border-radius: 50%;
 `;
+
