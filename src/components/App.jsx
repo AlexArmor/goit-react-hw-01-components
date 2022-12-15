@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'styles/theme';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
 import { GlobalStyleComponent } from '../styles/GlobalStyles';
 
 export const App = () => {
@@ -16,7 +17,17 @@ export const App = () => {
         // Block 1 //{' '}
       </Heading>
       <Profile user={user} />
+      <Heading marginBottom="50px" textAlign="center">
+        // Block 2 //{' '}
+      </Heading>
       <Statistics title="Upload stats" stats={data} />
+      <Heading marginBottom="50px" textAlign="center">
+        // Block 3 //{' '}
+      </Heading>
+      <FriendList friends={friends} />
+      <Heading marginBottom="50px" textAlign="center">
+        // Block 4 //{' '}
+      </Heading>
       <GlobalStyleComponent />
     </ThemeProvider>
   );
