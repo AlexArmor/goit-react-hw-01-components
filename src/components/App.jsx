@@ -8,6 +8,7 @@ import { theme } from 'styles/theme';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import { GlobalStyleComponent } from '../styles/GlobalStyles';
 
 export const App = () => {
@@ -28,6 +29,7 @@ export const App = () => {
       <Heading marginBottom="50px" textAlign="center">
         // Block 4 //{' '}
       </Heading>
+      <TransactionHistory items={transactions} />
       <GlobalStyleComponent />
     </ThemeProvider>
   );
