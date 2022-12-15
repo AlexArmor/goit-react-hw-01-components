@@ -6,6 +6,7 @@ import { Heading } from './Heading/Heading.styled';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'styles/theme';
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 import { GlobalStyleComponent } from '../styles/GlobalStyles';
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
         // Block 1 //{' '}
       </Heading>
       <Profile user={user} />
+      <Statistics title="Upload stats" stats={data} />
       <GlobalStyleComponent />
     </ThemeProvider>
   );
