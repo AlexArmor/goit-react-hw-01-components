@@ -14,21 +14,13 @@ import { GlobalStyleComponent } from '../styles/GlobalStyles';
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Heading marginBottom="50px" textAlign="center">
-        // Block 1 //{' '}
-      </Heading>
+      <Heading marginBottom="50px" textAlign="center"></Heading>
       <Profile user={user} />
-      <Heading marginBottom="50px" textAlign="center">
-        // Block 2 //{' '}
-      </Heading>
+      <Heading marginBottom="50px" textAlign="center"></Heading>
       <Statistics title="Upload stats" stats={data} />
-      <Heading marginBottom="50px" textAlign="center">
-        // Block 3 //{' '}
-      </Heading>
+      <Heading marginBottom="50px" textAlign="center"></Heading>
       <FriendList friends={friends} />
-      <Heading marginBottom="50px" textAlign="center">
-        // Block 4 //{' '}
-      </Heading>
+      <Heading marginBottom="50px" textAlign="center"></Heading>
       <TransactionHistory items={transactions} />
       <GlobalStyleComponent />
     </ThemeProvider>
