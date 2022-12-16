@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
-export const ForbesItem = styled.li`
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+export const FriendsItem = styled.li`
+  display: flex;
   align-items: center;
-  padding: 10px 30px 10px 10px;
+  gap: 150px;
+  width: ${({ theme }) => theme.spacing(150)};
+  margin: 0 auto;
+
+  padding: 10px 50px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.shadows.medium};
@@ -25,11 +28,19 @@ export const Avatar = styled.img`
   box-shadow: ${({ theme }) => theme.shadows.regular};
 `;
 
-export const Name = styled.h3`
+export const Name = styled.p`
   color: ${({ theme }) => theme.colors.grey};
   font-weight: 600;
   font-size: ${({ theme }) => theme.fontSizes.large};
   letter-spacing: ${({ theme }) => theme.spacing(0.25)};
   margin-left: ${({ theme }) => theme.spacing(2)};
   margin-bottom: 0;
+`;
+
+export const Status = styled.span`
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: ${({ status }) => (status ? 'green' : 'red')};
 `;

@@ -1,0 +1,1 @@
+export const statColors = ['red', 'green', 'purple', 'blue', 'orange'];

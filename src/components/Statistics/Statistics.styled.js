@@ -23,23 +23,10 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 160px;
   gap: ${({ theme }) => theme.spacing(10)};
   padding: ${({ theme }) => theme.spacing(8)};
   font-size: ${({ theme }) => theme.spacing(6)};
   color: ${({ theme }) => theme.colors.white};
-  &:nth-child(1) {
-    background-color: red;
-  }
-  &:nth-child(2) {
-    background-color: purple;
-  }
-  &:nth-child(3) {
-    background-color: teal;
-  }
-  &:nth-child(4) {
-    background-color: green;
-  }
-  &:nth-child(5) {
-    background-color: blue;
-  }
+  background-color: ${({ color }) => color};
 `;

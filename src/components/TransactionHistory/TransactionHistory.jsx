@@ -15,16 +15,25 @@ export const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
-            <>
-              <Tr key={id}>
-                <Td>{type}</Td>
-                <Td>{amount}</Td>
-                <Td>{currency}</Td>
-              </Tr>
-            </>
+            <Tr key={id}>
+              <Td>{type}</Td>
+              <Td>{amount}</Td>
+              <Td>{currency}</Td>
+            </Tr>
           );
         })}
       </tbody>
     </BaseTable>
   );
+};
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
 };
